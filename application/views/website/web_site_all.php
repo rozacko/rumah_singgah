@@ -105,17 +105,8 @@
                             <div class="collapse navbar-collapse sub-menu-bar" id="navbarEight">
                                 <ul class="navbar-nav ml-auto">
                                     <li class="nav-item active">
-                                        <a class="page-scroll" href="#home">HOME</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="page-scroll" href="#about">ABOUT</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="page-scroll" href="#portfolio">ACTIVITY</a>
+                                        <a class="page-scroll" href="<?php echo base_url() ?>">BACK</a>
                                     </li>                                    
-                                    <li class="nav-item">
-                                        <a class="page-scroll" href="#contact">CONTACT</a>
-                                    </li>
                                 </ul>
                             </div>
                         </nav> <!-- navbar -->
@@ -123,65 +114,6 @@
                 </div> <!-- row -->
             </div> <!-- container -->
         </div> <!-- navbar area -->
-        
-        <div id="home" class="slider-area">
-            <div class="bd-example">
-                <div id="carouselOne" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselOne" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselOne" data-slide-to="1"></li>
-                        <li data-target="#carouselOne" data-slide-to="2"></li>
-                    </ol>
-
-                    <div class="carousel-inner">
-                        <div class="carousel-item bg_cover active" style="background-image: url(<?php echo base_url() ?>assets2/assets/images/gambar1.jpg)">
-                            <div class="carousel-caption">
-                                <div class="container">
-                                    <div class="row justify-content-center">
-                                        <div class="col-xl-6 col-lg-7 col-sm-10">
-                                            <h2 class="carousel-title">xxxx</h2>
-                                        </div>
-                                    </div> <!-- row -->
-                                </div> <!-- container -->
-                            </div> <!-- carousel caption -->
-                        </div> <!-- carousel-item -->
-
-                        <div class="carousel-item bg_cover" style="background-image: url(<?php echo base_url() ?>assets2/assets/images/gambar2.jpg)">
-                            <div class="carousel-caption">
-                                <div class="container">
-                                    <div class="row justify-content-center">
-                                        <div class="col-xl-6 col-lg-7 col-sm-10">
-                                            <h2 class="carousel-title">xxx</h2>
-                                        </div>
-                                    </div> <!-- row -->
-                                </div> <!-- container -->
-                            </div> <!-- carousel caption -->
-                        </div> <!-- carousel-item -->
-
-                        <div class="carousel-item bg_cover" style="background-image: url(<?php echo base_url() ?>assets2/assets/images/gambar3.jpg)">
-                            <div class="carousel-caption">
-                                <div class="container">
-                                    <div class="row justify-content-center">
-                                        <div class="col-xl-6 col-lg-7 col-sm-10">
-                                            <h2 class="carousel-title">xxx</h2>
-                                        </div>
-                                    </div> <!-- row -->
-                                </div> <!-- container -->
-                            </div> <!-- carousel caption -->
-                        </div> <!-- carousel-item -->
-                    </div> <!-- carousel-inner -->
-
-                    <a class="carousel-control-prev" href="#carouselOne" role="button" data-slide="prev">
-                        <i class="lni-arrow-left-circle"></i>
-                    </a>
-
-                    <a class="carousel-control-next" href="#carouselOne" role="button" data-slide="next">
-                        <i class="lni-arrow-right-circle"></i>
-                    </a>
-                </div> <!-- carousel -->
-            </div> <!-- bd-example -->
-        </div>
-
     </section>
 
     <!--====== NAVBAR PART ENDS ======-->
@@ -191,90 +123,31 @@
 
     <!--====== SAIDEBAR PART ENDS ======-->
     
-    <!--====== ABOUT PART START ======-->
-
-    <section id="about" class="about-area">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xl-6 col-lg-8">
-                    <div class="about-image text-center wow fadeInUp" data-wow-duration="1.5s" data-wow-offset="100">
-                        <img src="<?php echo base_url() ?>assets2/assets/images/services.png" alt="services">
-                    </div>
-                    <div class="section-title text-center mt-30 pb-40">
-                        <h4 class="title wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.6s">Rumah Singgah Amanah</h4>
-                        <p class="text wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1s">Adalah xxxx</p>
-                    </div> <!-- section title -->
+    <!--====== portfolio PART START ======-->
+    <section id="call-action" class="call-action-area">
+        <div class="container">            
+            <div class="row align-items-center">
+                <div class="col-lg-5">
+                    <div class="call-action-content mt-45">
+                        <h3 class="action-title">Cari aktivitas kita</h3>
+                        <!-- <p class="text">We never spam your email</p> -->
+                    </div> <!-- call action content -->
                 </div>
-            </div> <!-- row -->
-            
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="single-about d-sm-flex mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1.2s">
-                        <div class="about-icon">
-                            <img src="<?php echo base_url() ?>assets2/assets/images/icon-1.png" alt="Icon">
+                <div class="col-lg-7">
+                    <div class="call-action-form mt-50">                        
+                        <input type="text" placeholder="Pencarian" id="search">
+                        <div class="action-btn rounded-buttons">
+                            <button type="button" onclick="btn_search()" class="main-btn rounded-three">cari</button>
                         </div>
-                        <div class="about-content media-body">
-                            <h4 class="about-title">Point 1</h4>
-                            <p class="text">xxx</p>
-                        </div>
-                    </div> <!-- single about -->
-                </div>
-                <div class="col-lg-6">
-                    <div class="single-about d-sm-flex mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1.4s">
-                        <div class="about-icon">
-                            <img src="<?php echo base_url() ?>assets2/assets/images/icon-2.png" alt="Icon">
-                        </div>
-                        <div class="about-content media-body">
-                            <h4 class="about-title">Point 2</h4>
-                            <p class="text">xxx</p>
-                        </div>
-                    </div> <!-- single about -->
-                </div>
-                <div class="col-lg-6">
-                    <div class="single-about d-sm-flex mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1.6s">
-                        <div class="about-icon">
-                            <img src="<?php echo base_url() ?>assets2/assets/images/icon-3.png" alt="Icon">
-                        </div>
-                        <div class="about-content media-body">
-                            <h4 class="about-title">Point 3</h4>
-                            <p class="text">xxx</p>
-                        </div>
-                    </div> <!-- single about -->
-                </div>
-                <div class="col-lg-6">
-                    <div class="single-about d-sm-flex mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1.8s">
-                        <div class="about-icon">
-                            <img src="<?php echo base_url() ?>assets2/assets/images/icon-4.png" alt="Icon">
-                        </div>
-                        <div class="about-content media-body">
-                            <h4 class="about-title">Point 4</h4>
-                            <p class="text">xxx</p>
-                        </div>
-                    </div> <!-- single about -->
+                    </div> <!-- call action form -->
                 </div>
             </div> <!-- row -->
         </div> <!-- container -->
-    </section>
-
-    <!--====== ABOUT PART ENDS ======-->
-    
-    <!--====== portfolio PART START ======-->
-
-    <section id="portfolio" class="portfolio-area">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-6">
-                    <div class="section-title text-center pb-20">
-                        <h3 class="title">Aktifitas kita</h3>
-                        <p class="text">xxx</p>
-                        <a href="<?php echo base_url() ?>First_time/all_konten">Lihat Lebih Banyak</a>
-                    </div> <!-- row -->
-                </div>
-            </div> <!-- row -->
+        <div class="container">            
             <div class="row">
                <?php $posisi = 'kiri';
                   foreach ($konten as $key => $value) { 
-                     if($value['konten_judul'] != '' && $key < 5){
+                     if($value['konten_judul'] != '' && $key <= 10){
                         if($posisi == 'kiri'){?>
                            <div class="col-lg-4">
                               <div class="single-portfolio mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.4s">
@@ -330,6 +203,9 @@
                 <?php $posisi = 'kiri';}}}?>  
             </div>
         </div> <!-- container -->
+    </section>
+    <section id="portfolio" class="portfolio-area">
+        
     </section>
 
     <!--====== portfolio PART ENDS ======-->
@@ -422,7 +298,12 @@
 
     <!--====== Main js ======-->
     <script src="<?php echo base_url() ?>assets2/assets/js/main.js"></script>
-
+    <script>
+        function btn_search() {
+            var search = $('#search').val();
+            window.open('<?php echo base_url() ?>First_time/all_konten/' + search,'_self'); 
+        };
+    </script>
 </body>
 
 </html>
